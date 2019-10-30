@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ts",
+  "name": "Titanstorms",
+  "description": "Mod For Terralization modpack.",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "titanstorms.com",
+  "updateUrl": "",
+  "authorList": ["StealthAlgorithm"],
+  "credits": "Stealthalgorithm",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
