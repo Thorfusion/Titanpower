@@ -1,48 +1,28 @@
-[17:56:38] [main/INFO]: Setting user: Player186
-[17:56:38] [Client thread/INFO]: LWJGL Version: 2.9.1
-[17:56:39] [Client thread/ERROR]: Couldn't initialize twitch stream
-[17:56:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:examplemod, FMLFileResourcePack:Titanstorms
-[17:56:43] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[17:56:43] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[17:56:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:examplemod, FMLFileResourcePack:Titanstorms
-[17:56:43] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[17:56:43] [Sound Library Loader/INFO]: Sound engine started
-[17:56:43] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[17:56:44] [Sound Library Loader/INFO]: Sound engine started
-[17:56:54] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[17:56:54] [Server thread/INFO]: Generating keypair
-[17:56:54] [Server thread/INFO]: Converting map!
-[17:56:54] [Server thread/INFO]: Scanning folders...
-[17:56:54] [Server thread/INFO]: Total conversion count is 0
-[17:56:54] [Server thread/INFO]: Preparing start region for level 0
-[17:56:55] [Server thread/INFO]: Preparing spawn area: 20%
-[17:56:56] [Server thread/INFO]: Preparing spawn area: 49%
-[17:56:57] [Server thread/INFO]: Preparing spawn area: 82%
-[17:56:58] [Server thread/INFO]: Changing view distance to 12, from 10
-[17:56:58] [Server thread/INFO]: Player186[local:E:57c0ac43] logged in with entity id 271 at (-130.5, 70.0, 242.5)
-[17:56:58] [Server thread/INFO]: Player186 joined the game
-[17:57:01] [Server thread/INFO]: Player186 has just earned the achievement [Taking Inventory]
-[17:57:01] [Client thread/INFO]: [CHAT] Player186 has just earned the achievement [Taking Inventory]
-[17:57:31] [Server thread/INFO]: [Player186: Set own game mode to Survival Mode]
-[17:57:31] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[17:58:56] [Server thread/INFO]: When diamonds and machines isn't enough
-[17:58:56] [Client thread/INFO]: [CHAT] When diamonds and machines isn't enough
-[17:59:26] [Server thread/INFO]: Saving and pausing game...
-[17:59:26] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:59:26] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:59:26] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:00:09] [Server thread/INFO]: When diamonds and machines isn't enough
-[18:00:09] [Client thread/INFO]: [CHAT] When diamonds and machines isn't enough
-[18:00:41] [Server thread/INFO]: Player186 has just earned the achievement [Getting Wood]
-[18:00:41] [Client thread/INFO]: [CHAT] Player186 has just earned the achievement [Getting Wood]
-[18:02:52] [Server thread/INFO]: Saving and pausing game...
-[18:02:52] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:02:52] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:02:52] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:02:53] [Server thread/INFO]: Stopping server
-[18:02:53] [Server thread/INFO]: Saving players
-[18:02:53] [Server thread/INFO]: Saving worlds
-[18:02:53] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:02:53] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:02:53] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:02:56] [Client thread/INFO]: Stopping!
+[00:20:43] [main/INFO]: Setting user: Player337
+[00:20:44] [Client thread/INFO]: LWJGL Version: 2.9.1
+[00:20:44] [Client thread/ERROR]: Couldn't initialize twitch stream
+[00:20:47] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Titanstorms
+[00:20:48] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[00:20:48] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[00:20:48] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Titanstorms
+[00:20:48] [Sound Library Loader/INFO]: Sound engine started
+[00:20:48] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[00:20:48] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[00:20:49] [Sound Library Loader/INFO]: Sound engine started
+[00:20:56] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[00:20:56] [Server thread/INFO]: Generating keypair
+[00:20:56] [Server thread/INFO]: Preparing start region for level 0
+[00:20:57] [Server thread/INFO]: Changing view distance to 12, from 10
+[00:20:57] [Server thread/INFO]: Player337[local:E:6bac2579] logged in with entity id 415 at (-167.2282663510391, 101.0, 392.69376428770715)
+[00:20:57] [Server thread/INFO]: Player337 joined the game
+[00:21:20] [Server thread/INFO]: Saving and pausing game...
+[00:21:20] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:21:20] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:21:20] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:21:23] [Server thread/INFO]: Stopping server
+[00:21:23] [Server thread/INFO]: Saving players
+[00:21:23] [Server thread/INFO]: Saving worlds
+[00:21:23] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:21:23] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:21:23] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:21:24] [Client thread/INFO]: Stopping!
