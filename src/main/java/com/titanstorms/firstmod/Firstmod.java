@@ -17,6 +17,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.sound.SoundEvent;
 import net.minecraftforge.common.util.EnumHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
+import cpw.mods.fml.relauncher.Side;
+
+import com.jadarstudios.developercapes.DevCapes;
 
 @Mod(modid = "ts", name = "Titanstorms", version = "1.3")
 public class Firstmod
@@ -31,6 +35,8 @@ public class Firstmod
             EnumHelper.addToolMaterial("terralization", 99999999, 99999, 146039.0F, 130.0F,
                                        99);
 
+	@Mod.Instance
+    public static Firstmod instance;
 
       @EventHandler
       public void forst(FMLPreInitializationEvent event)
@@ -74,7 +80,10 @@ public class Firstmod
       @EventHandler
       public void klar(FMLInitializationEvent event)
       {
-            //proxy, tilentity
+			//proxy, tilentity
+			if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) {
+				DevCapes.getInstance().registerConfig("https://technic-solder.eu-central-1.linodeobjects.com/cape.json");
+			}
       }
       @EventHandler
       public void etter(FMLPostInitializationEvent event)
