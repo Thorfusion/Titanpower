@@ -64,8 +64,8 @@ public class PickaxeTerra extends ItemPickaxe
                                              1));
             par2EntityLiving.addPotionEffect(new PotionEffect(Potion.confusion.id, 2000,
                                              1));
-            */
-            /*
+
+
             //m� ikke c�re med i server verisjon
             if(Minecraft.getMinecraft().thePlayer.getDisplayName()=="maggi373") {
                   MinecraftServer.getServer().getConfigurationManager().sendChatMsg(new ChatComponentText("The pickaxe is at its rightfull owner"));
@@ -82,7 +82,8 @@ public class PickaxeTerra extends ItemPickaxe
                   }
 
             }
-            */
+
             return true;
       }
+      */
 }
