@@ -36,7 +36,7 @@ public class Firstmod
                                        99);
 
 	@Mod.Instance
-    public static DevCapesDemo instance;
+    public static Firstmod instance;
 
       @EventHandler
       public void forst(FMLPreInitializationEvent event)
