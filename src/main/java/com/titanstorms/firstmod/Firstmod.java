@@ -42,7 +42,7 @@ public class Firstmod
                         tabFirstmod);
                   blueradien = new BlueRadien(Material.rock).setCreativeTab(tabFirstmod);
                   pickaxeterra = new PickaxeTerra(terralization).setCreativeTab(tabFirstmod);
-                  titandian = new TitanDian(Material.dragonEgg).setCreativeTab(tabFirstmod);
+                  titandian = new TitanDian(Material.iron).setCreativeTab(tabFirstmod);
                   GameRegistry.registerItem(pickaxeterra,
                                             pickaxeterra.getUnlocalizedName().substring(5));
                   GameRegistry.registerItem(blueradienstick,
