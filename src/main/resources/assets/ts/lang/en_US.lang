@@ -3,3 +3,5 @@ tile.titandian.name=Titandia
 tile.blueradien.name=Blueradien
 item.Blueraidenstick.name=Blue radien stick
 msg.titanstorms.value=This command is just for display for now....
+
+itemGroup.tabFirstmod=Titamstorms
