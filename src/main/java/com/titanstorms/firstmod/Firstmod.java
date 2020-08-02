@@ -18,7 +18,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.sound.SoundEvent;
 import net.minecraftforge.common.util.EnumHelper;
 
-@Mod(modid="ts", name="Titanstorms", version="1.1")
+@Mod(modid="ts", name="Titanstorms", version="1.2")
 public class Firstmod {
 
 	protected static Item blueradienstick;
