@@ -1,3 +1,5 @@
+package titanstorms.client;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -90,11 +92,6 @@ public class ClientTickHandler
 
 		if(mc.theWorld != null && !Mekanism.proxy.isPaused())
 		{
-			if((!initHoliday || MekanismClient.ticksPassed % 1200 == 0) && mc.thePlayer != null)
-			{
-				HolidayManager.check();
-				initHoliday = true;
-			}
 
 			for(EntityPlayer entityPlayer : (List<EntityPlayer>)mc.theWorld.playerEntities)
 			{
