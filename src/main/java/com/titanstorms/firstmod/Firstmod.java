@@ -31,12 +31,12 @@ public class Firstmod {
 	@EventHandler
 	public void forst(FMLPreInitializationEvent event) {
 //lager objekter
-		blueradienstick= new BlueRadienstick(Material.dragonEgg);
-		blueradien=new BlueRadien(Material.rock);
-		pickaxeterra= new PickaxeTerra(terralization);
+		blueradienstick= new BlueRadienstick(Material.dragonEgg).setCreativeTab(tabFirstmod);
+		blueradien=new BlueRadien(Material.rock).setCreativeTab(tabFirstmod);
+		pickaxeterra= new PickaxeTerra(terralization).setCreativeTab(tabFirstmod);
 		
 		
-		titandian = new TitanDian(Material.dragonEgg);
+		titandian = new TitanDian(Material.dragonEgg).setCreativeTab(tabFirstmod);
 		
 		
 		GameRegistry.registerItem(pickaxeterra,pickaxeterra.getUnlocalizedName().substring(5));
@@ -64,9 +64,17 @@ public class Firstmod {
 	public void etter(FMLPostInitializationEvent event) {
 		
 	}
+	public static CreativeTabs tabFirstmod = new CreativeTabs("tabFirstmod"){
+		@Override
+		public Item getTabIconItem(){
+			return new ItemStack(blueradienstick).getItem();
+		}
+	};
 	@EventHandler
 	public void serverl(FMLServerStartingEvent event) {
 		event.registerServerCommand(new Komando());
 		event.registerServerCommand(new Getcoord());
 	}
+	
+
 }
