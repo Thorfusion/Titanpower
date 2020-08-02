@@ -18,8 +18,8 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.3"
-group= "com.titanstorms.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+group= "com.titanstorms.ts" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "ts"
 
 minecraft {
   version = "1.7.10-10.13.4.1614-1.7.10"
