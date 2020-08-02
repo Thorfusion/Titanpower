@@ -13,7 +13,7 @@ public class BlueRadien extends Block {
 	public BlueRadien(Material material) {
 		super(material);
 		this.setBlockName("blueradien").setBlockTextureName("ts:blueore").setCreativeTab(CreativeTabs.tabBlock).setStepSound(Block.soundTypeGlass)
-		.setLightLevel(0.4F).setResistance(100F);
+		.setLightLevel(0.4F).setResistance(100F).setHarvestLevel(3);
 	}
 	@Override
 	public Item getItemDropped(int metadata,Random rand, int fortune) {
