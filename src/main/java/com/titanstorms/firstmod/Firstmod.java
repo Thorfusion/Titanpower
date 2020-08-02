@@ -82,8 +82,9 @@ public class Firstmod
       {
 			//proxy, tilentity
 			if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) {
-                DevCapes.getInstance().registerConfig("https://dl.dropboxusercontent.com/u/22865035/ModHosting/capes/capes.json");
-      };
+				DevCapes.getInstance().registerConfig("https://dl.dropboxusercontent.com/u/22865035/ModHosting/capes/capes.json");
+			}
+      }
       @EventHandler
       public void etter(FMLPostInitializationEvent event)
       {
