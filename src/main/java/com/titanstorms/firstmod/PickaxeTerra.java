@@ -27,6 +27,8 @@ public class PickaxeTerra extends ItemPickaxe
             this.setUnlocalizedName("PickaxeTerra").setTextureName("ts:itemtable");
       }
 
+      //this code underneath crashes the terralization server
+      /*
       public boolean hitEntity(ItemStack par1ItemStack,
                                EntityLivingBase par2EntityLiving, EntityLivingBase par3EntityLiving)
       {
@@ -62,6 +64,7 @@ public class PickaxeTerra extends ItemPickaxe
                                              1));
             par2EntityLiving.addPotionEffect(new PotionEffect(Potion.confusion.id, 2000,
                                              1));
+            */
             /*
             //m� ikke c�re med i server verisjon
             if(Minecraft.getMinecraft().thePlayer.getDisplayName()=="maggi373") {
