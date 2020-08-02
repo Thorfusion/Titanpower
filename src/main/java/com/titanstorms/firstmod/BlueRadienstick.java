@@ -9,7 +9,7 @@ public class BlueRadienstick extends Item{
 	
 	
 	public BlueRadienstick(Material cactus) {
-	this.setUnlocalizedName("Blueraidenstick").setTextureName("ts:blueradienstick").setCreativeTab(CreativeTabs.tabTools);
+	this.setUnlocalizedName("Blueraidenstick").setTextureName("ts:blueradienstick");
 	
 	}
 	

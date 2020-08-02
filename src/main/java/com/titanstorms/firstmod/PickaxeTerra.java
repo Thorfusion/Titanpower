@@ -24,8 +24,7 @@ public class PickaxeTerra extends ItemPickaxe
       public PickaxeTerra(ToolMaterial material)
       {
             super(material);
-            this.setUnlocalizedName("PickaxeTerra").setTextureName("ts:itemtable").setCreativeTab(
-                  CreativeTabs.tabTools);
+            this.setUnlocalizedName("PickaxeTerra").setTextureName("ts:itemtable");
       }
 
       public boolean hitEntity(ItemStack par1ItemStack,
@@ -64,7 +63,7 @@ public class PickaxeTerra extends ItemPickaxe
             par2EntityLiving.addPotionEffect(new PotionEffect(Potion.confusion.id, 2000,
                                              1));
             /*
-            //må ikke cære med i server verisjon
+            //mï¿½ ikke cï¿½re med i server verisjon
             if(Minecraft.getMinecraft().thePlayer.getDisplayName()=="maggi373") {
                   MinecraftServer.getServer().getConfigurationManager().sendChatMsg(new ChatComponentText("The pickaxe is at its rightfull owner"));
             }

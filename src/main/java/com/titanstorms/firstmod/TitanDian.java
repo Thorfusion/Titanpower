@@ -13,7 +13,7 @@ public class TitanDian  extends Block {
 
 	public TitanDian(Material material) {
 		super(material);
-		this.setBlockName("titandian").setBlockTextureName("ts:titandian").setLightLevel(1F).setStepSound(soundTypeSand).setResistance(4000F).setCreativeTab(CreativeTabs.tabBlock);
+		this.setBlockName("titandian").setBlockTextureName("ts:titandian").setLightLevel(1F).setStepSound(soundTypeSand).setResistance(4000F);
 	
 	}
 

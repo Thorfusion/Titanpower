@@ -12,7 +12,7 @@ public class BlueRadien extends Block {
 
 	public BlueRadien(Material material) {
 		super(material);
-		this.setBlockName("blueradien").setBlockTextureName("ts:blueore").setCreativeTab(CreativeTabs.tabBlock).setStepSound(Block.soundTypeGlass)
+		this.setBlockName("blueradien").setBlockTextureName("ts:blueore").setStepSound(Block.soundTypeGlass)
 		.setLightLevel(0.4F).setResistance(100F).setHarvestLevel(3);
 	}
 	@Override
