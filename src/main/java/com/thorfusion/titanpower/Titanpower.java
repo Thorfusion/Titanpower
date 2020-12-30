@@ -17,14 +17,18 @@ import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.relauncher.Side;
 import com.jadarstudios.developercapes.DevCapes;
 
-@Mod(modid = Titanpower.titanpower, name = Titanpower.Titanpower, version = Titanpower.1.5.1)
+@Mod(modid = Titanpower.MODID, name = Titanpower.NAME, version = Titanpower.VERSION)
 
 public class Titanpower
 {
+    public static final String NAME = "Titanpower";
+    public static final String MODID = "titanpower";
+    public static final String VERSION = "1.5.1";
+
 
     protected static Item bluradienstick;
     protected static Item pickaxeterra;
-    protected static Block titandia;
+
     protected static Block bluradien;
     //HarvestLevel, maxuses,efficecy,damage, enchance
     private Item.ToolMaterial terralization =
@@ -37,6 +41,21 @@ public class Titanpower
 	@EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        //Adds creative tab
+        public static CreativeTabs tabTitanpower = new CreativeTabs("tabTitanpower")
+        {
+            @Override
+            public Item getTabIconItem()
+            {
+                return new ItemStack(bluradienstick).getItem();
+            }
+        };
+        TitanpowerBlocks.init();
+        TitanpowerOreBlocks.init();
+        TitanpowerTools.init();
+        TitanpowerItems.init();
+        TitanpowerOreGen.init();
+        TitanpowerRecipes.init();
         try
         {
                   //lager objekter
@@ -44,19 +63,15 @@ public class Titanpower
                         tabTitanpower);
                   bluradien = new Bluradien(Material.rock).setCreativeTab(tabTitanpower);
                   pickaxeterra = new PickaxeTerra(terralization).setCreativeTab(tabTitanpower);
-                  titandia = new Titandia(Material.iron).setCreativeTab(tabTitanpower);
+
                   GameRegistry.registerItem(pickaxeterra,
                                             pickaxeterra.getUnlocalizedName().substring(5));
                   GameRegistry.registerItem(bluradienstick,
                                             bluradienstick.getUnlocalizedName().substring(5));
-                  GameRegistry.registerBlock(titandia,
-                                             titandia.getUnlocalizedName().substring(5));
+
                   GameRegistry.registerBlock(bluradien,
                                              bluradien.getUnlocalizedName().substring(5));
-                  GameRegistry.addRecipe(new ItemStack(titandia), new Object[] {"ooo",
-                                         "oao",
-                                         "ooo", 'o', Blocks.obsidian, 'a', Blocks.anvil
-                                                                                });
+
                   GameRegistry.addRecipe(new ItemStack(pickaxeterra), new Object[] {"ttt",
                                          " d ",
                                          " d ", 't', titandia, 'd', bluradienstick
@@ -83,15 +98,7 @@ public class Titanpower
     @EventHandler
       public void postInit(FMLPostInitializationEvent event)
       {
-          //Adds creative tab
-          public static CreativeTabs tabTitanpower = new CreativeTabs("tabTitanpower")
-          {
-              @Override
-              public Item getTabIconItem()
-              {
-                  return new ItemStack(bluradienstick).getItem();
-              }
-          };
+
       }
 
 }

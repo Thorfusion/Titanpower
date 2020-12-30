@@ -3,7 +3,7 @@ package com.thorfusion.titanpower;
 
 import net.minecraft.item.ItemPickaxe;
 
-public class PickaxeTerra extends ItemPickaxe
+public class TitanpowerTools extends ItemPickaxe
 {
       public PickaxeTerra(ToolMaterial material)
       {

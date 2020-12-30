@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 
-public class Bluradien extends Block {
+public class TitanpowerOreBlocks extends Block {
 
 	public Bluradien(Material material) {
 		super(material);

@@ -1,16 +1,32 @@
 package com.thorfusion.titanpower;
 
-import java.util.Random;
-
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 
-public class Titandia  extends Block {
 
-	public Titandia(Material material) {
-		super(material);
-		this.setBlockName("titandia").setBlockTextureName("titanpower:titandia").setLightLevel(1F).setStepSound(soundTypeSand).setResistance(4000F).setHardness(0.1F).setHarvestLevel("shovel", 3);
-	
+public class TitanpowerBlocks
+{
+	public static Block titandia;
+	public static void init()
+	{
+		titandia = new Titandia();
 	}
 
+	public class Titandia  extends Block {
+		private static final String name = "titandia";
+		public Titandia() {
+			super(Material.iron);
+			GameRegistry.registerBlock(this, titandia.getUnlocalizedName().substring(5));
+			setBlockTextureName(Titanpower.MODID:name);
+			setCreativeTab(CreativeTabs.tabTitanpower);
+			setBlockName(name):
+			setLightLevel(1F):
+			setStepSound(soundTypeSand):
+			setResistance(4000F):
+			setHardness(0.1F):
+			setHarvestLevel("shovel", 3);
+		}
+	}
 }
