@@ -35,55 +35,21 @@ public class Titanpower
         }
     };
 
-    protected static Item pickaxeterra;
-
-    protected static Block bluradien;
-    //HarvestLevel, maxuses,efficecy,damage, enchance
-    private Item.ToolMaterial terralization =
-            EnumHelper.addToolMaterial("terralization", 99999999, 99999, 146039.0F, 130.0F,
-                                       99);
-
 	@Mod.Instance
     public static Titanpower instance;
 
 	@EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
         TitanpowerBlocks.init();
         TitanpowerOreBlocks.init();
+        TitanpowerOreBlocks.register();
         TitanpowerTools.init();
         TitanpowerItems.init();
         TitanpowerItems.register();
-        TitanpowerOreGen.init();
+        TitanpowerOreGen.register();
+        TitanpowerOreGen.register();
         TitanpowerRecipes.init();
-
-        try
-        {
-                  //lager objekter
-
-                  bluradien = new Bluradien(Material.rock).setCreativeTab(tabTitanpower);
-                  pickaxeterra = new PickaxeTerra(terralization).setCreativeTab(tabTitanpower);
-
-                  GameRegistry.registerItem(pickaxeterra,
-                                            pickaxeterra.getUnlocalizedName().substring(5));
-
-
-                  GameRegistry.registerBlock(bluradien,
-                                             bluradien.getUnlocalizedName().substring(5));
-
-                  GameRegistry.addRecipe(new ItemStack(pickaxeterra), new Object[] {"ttt",
-                                         " d ",
-                                         " d ", 't', TitanpowerBlocks.titandia, 'd', TitanpowerItems.blurod
-                                                                                   });
-
-                  System.out.println("Yo!");
-                  GameRegistry.registerWorldGenerator(new BluradienGen(), 0);
-        }
-        catch (Exception e)
-        {
-            System.out.println("Somehing went wrong registering items");
-        }
     }
 
     @EventHandler
@@ -100,5 +66,4 @@ public class Titanpower
       {
 
       }
-
 }

@@ -3,12 +3,12 @@ package com.thorfusion.titanpower;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 
 public class TitanpowerBlocks
 {
 	public static Block titandia;
+
 	public static void init()
 	{
 		titandia = new Titandia();
@@ -21,11 +21,11 @@ public class TitanpowerBlocks
 			GameRegistry.registerBlock(this, name);
 			setBlockTextureName(Titanpower.MODID:name);
 			setCreativeTab(Titanpower.tabTitanpower);
-			setBlockName(name):
-			setLightLevel(1F):
-			setStepSound(soundTypeSand):
-			setResistance(4000F):
-			setHardness(0.1F):
+			setBlockName(name);
+			setLightLevel(1F);
+			setStepSound(soundTypeSand);
+			setResistance(4000F);
+			setHardness(0.1F);
 			setHarvestLevel("shovel", 3);
 		}
 	}
