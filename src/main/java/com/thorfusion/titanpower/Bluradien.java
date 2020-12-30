@@ -11,7 +11,7 @@ public class Bluradien extends Block {
 
 	public Bluradien(Material material) {
 		super(material);
-		this.setBlockName("bluore").setBlockTextureName("titanpower:blueore").setStepSound(Block.soundTypeGlass)
+		this.setBlockName("bluore").setBlockTextureName("titanpower:bluore").setStepSound(Block.soundTypeGlass)
 		.setLightLevel(0.1F).setResistance(100F).setHarvestLevel("pickaxe", 3);
 	}
 	@Override
