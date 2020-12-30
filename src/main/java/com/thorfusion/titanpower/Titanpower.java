@@ -25,7 +25,15 @@ public class Titanpower
     public static final String MODID = "titanpower";
     public static final String VERSION = "1.5.1";
 
-
+    //Adds creative tab
+    public static CreativeTabs tabTitanpower = new CreativeTabs("tabTitanpower")
+    {
+        @Override
+        public Item getTabIconItem()
+        {
+            return new ItemStack(TitanpowerItems.blurod).getItem();
+        }
+    };
 
     protected static Item pickaxeterra;
 
@@ -41,22 +49,15 @@ public class Titanpower
 	@EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        //Adds creative tab
-        public static CreativeTabs tabTitanpower = new CreativeTabs("tabTitanpower")
-        {
-            @Override
-            public Item getTabIconItem()
-            {
-                return new ItemStack(TitanpowerItems.blurod).getItem();
-            }
-        };
+
         TitanpowerBlocks.init();
         TitanpowerOreBlocks.init();
         TitanpowerTools.init();
         TitanpowerItems.init();
+        TitanpowerItems.register();
         TitanpowerOreGen.init();
         TitanpowerRecipes.init();
-        TitanpowerItems.register();
+
         try
         {
                   //lager objekter

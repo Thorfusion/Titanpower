@@ -20,7 +20,7 @@ public class TitanpowerBlocks
 			super(Material.iron);
 			GameRegistry.registerBlock(this, name);
 			setBlockTextureName(Titanpower.MODID:name);
-			setCreativeTab(CreativeTabs.tabTitanpower);
+			setCreativeTab(Titanpower.tabTitanpower);
 			setBlockName(name):
 			setLightLevel(1F):
 			setStepSound(soundTypeSand):
