@@ -97,13 +97,4 @@ public class Titanpower
                   return new ItemStack(bluradienstick).getItem();
             }
       };
-
-      @EventHandler
-      public void serverl(FMLServerStartingEvent event)
-      {
-            event.registerServerCommand(new Komando());
-            event.registerServerCommand(new Getcoord());
-      }
-
-
 }
