@@ -1,12 +1,14 @@
-# firstmod
+# Titanpower
+A fancy mod made for Terralization modpack but now its for everyone!
 
-### husk:
-java version angit av gradlew filen JAVA_HOME=""
 
-#### for å teste client i console kjor
 
+## Compiling and stuff
+### Remember:
+the java version is set by JAVA_HOME=""
+
+#### To test client do
 ./gradlew runClient
 
-#### for å teste server
-
+#### To test server do
 ./gradlew runServer
