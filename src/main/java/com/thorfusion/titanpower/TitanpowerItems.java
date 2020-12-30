@@ -14,6 +14,6 @@ public class TitanpowerItems
 
 	public static void register()
 	{
-		GameRegistry.registerItem(blurod, blurod.getUnlocalizedName();
+		GameRegistry.registerItem(blurod, blurod.getUnlocalizedName());
 	}
 }

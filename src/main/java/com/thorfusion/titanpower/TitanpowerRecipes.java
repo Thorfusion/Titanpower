@@ -8,7 +8,7 @@ public class TitanpowerRecipes
 {
     public static void init()
     {
-        GameRegistry.addRecipe(new ItemStack(TitanpowerBlocks.titandia), new Object[] {"ooo", "oao", "ooo", 'o', Blocks.obsidian, 'a', Blocks.anvil};
+        GameRegistry.addRecipe(new ItemStack(TitanpowerBlocks.titandia), new Object[] {"ooo", "oao", "ooo", 'o', Blocks.obsidian, 'a', Blocks.anvil});
         GameRegistry.addRecipe(new ItemStack(TitanpowerTools.PickaxeTerralization), new Object[] {"ttt", " d ", " d ", 't', TitanpowerBlocks.titandia, 'd', TitanpowerItems.blurod});
     }
 }
