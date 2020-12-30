@@ -15,30 +15,30 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.relauncher.Side;
-
 import com.jadarstudios.developercapes.DevCapes;
 
-@Mod(modid = "titanpower", name = "Titanpower", version = "1.5a")
+@Mod(modid = Titanpower.titanpower, name = Titanpower.Titanpower, version = Titanpower.1.5.1)
+
 public class Titanpower
 {
 
-      protected static Item bluradienstick;
-      protected static Item pickaxeterra;
-      protected static Block titandia;
-      protected static Block bluradien;
-      //HarvestLevel, maxuses,efficecy,damage, enchance
-      private Item.ToolMaterial terralization =
+    protected static Item bluradienstick;
+    protected static Item pickaxeterra;
+    protected static Block titandia;
+    protected static Block bluradien;
+    //HarvestLevel, maxuses,efficecy,damage, enchance
+    private Item.ToolMaterial terralization =
             EnumHelper.addToolMaterial("terralization", 99999999, 99999, 146039.0F, 130.0F,
                                        99);
 
 	@Mod.Instance
     public static Titanpower instance;
 
-      @EventHandler
-      public void forst(FMLPreInitializationEvent event)
-      {
-            try
-            {
+	@EventHandler
+    public void preInit(FMLPreInitializationEvent event)
+    {
+        try
+        {
                   //lager objekter
                   bluradienstick = new Bluradienstick(Material.dragonEgg).setCreativeTab(
                         tabTitanpower);
@@ -64,33 +64,34 @@ public class Titanpower
                   System.out.println(titandia.getUnlocalizedName().substring(5));
                   System.out.println("Yo!");
                   GameRegistry.registerWorldGenerator(new BluradienGen(), 0);
-            }
-            catch (Exception e)
-            {
-                  System.out.println("Somehing went wrong registering items");
-            }
-      }
+        }
+        catch (Exception e)
+        {
+            System.out.println("Somehing went wrong registering items");
+        }
+    }
 
+    @EventHandler
+    public void init(FMLInitializationEvent event)
+    {
+        //proxy, tilentity
+        if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) {
+            DevCapes.getInstance().registerConfig("https://technic-solder.eu-central-1.linodeobjects.com/cape.json");
+        }
+    }
 
-
-      @EventHandler
-      public void klar(FMLInitializationEvent event)
+    @EventHandler
+      public void postInit(FMLPostInitializationEvent event)
       {
-			//proxy, tilentity
-			if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) {
-				DevCapes.getInstance().registerConfig("https://technic-solder.eu-central-1.linodeobjects.com/cape.json");
-			}
-      }
-      @EventHandler
-      public void etter(FMLPostInitializationEvent event)
-      {
-      }
-      public static CreativeTabs tabTitanpower = new CreativeTabs("tabTitanpower")
-      {
-            @Override
-            public Item getTabIconItem()
-            {
+          //Adds creative tab
+          public static CreativeTabs tabTitanpower = new CreativeTabs("tabTitanpower")
+          {
+              @Override
+              public Item getTabIconItem()
+              {
                   return new ItemStack(bluradienstick).getItem();
-            }
-      };
+              }
+          };
+      }
+
 }
