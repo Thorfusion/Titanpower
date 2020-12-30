@@ -26,7 +26,7 @@ public class TitanpowerOreBlocks
 		super(Material.rock);
 		GameRegistry.registerBlock(this, name);
 		setBlockName(name)
-		setBlockTextureName(Titanpower.MODID:name)
+		setBlockTextureName(Titanpower.MODID + ":" + name)
 		setStepSound(Block.soundTypeGlass)
 		setLightLevel(0.1F)
 		setResistance(100F)

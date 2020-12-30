@@ -19,7 +19,7 @@ public class TitanpowerBlocks
 		public Titandia() {
 			super(Material.iron);
 			GameRegistry.registerBlock(this, name);
-			setBlockTextureName(Titanpower.MODID:name);
+			setBlockTextureName(Titanpower.MODID + ":" + name);
 			setCreativeTab(Titanpower.tabTitanpower);
 			setBlockName(name);
 			setLightLevel(1F);
