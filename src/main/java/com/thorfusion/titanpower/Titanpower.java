@@ -26,7 +26,7 @@ public class Titanpower
     public static final String VERSION = "1.5.1";
 
 
-    protected static Item bluradienstick;
+
     protected static Item pickaxeterra;
 
     protected static Block bluradien;
@@ -47,7 +47,7 @@ public class Titanpower
             @Override
             public Item getTabIconItem()
             {
-                return new ItemStack(bluradienstick).getItem();
+                return new ItemStack(TitanpowerItems.blurod).getItem();
             }
         };
         TitanpowerBlocks.init();
@@ -56,27 +56,26 @@ public class Titanpower
         TitanpowerItems.init();
         TitanpowerOreGen.init();
         TitanpowerRecipes.init();
+        TitanpowerItems.register();
         try
         {
                   //lager objekter
-                  bluradienstick = new Bluradienstick(Material.dragonEgg).setCreativeTab(
-                        tabTitanpower);
+
                   bluradien = new Bluradien(Material.rock).setCreativeTab(tabTitanpower);
                   pickaxeterra = new PickaxeTerra(terralization).setCreativeTab(tabTitanpower);
 
                   GameRegistry.registerItem(pickaxeterra,
                                             pickaxeterra.getUnlocalizedName().substring(5));
-                  GameRegistry.registerItem(bluradienstick,
-                                            bluradienstick.getUnlocalizedName().substring(5));
+
 
                   GameRegistry.registerBlock(bluradien,
                                              bluradien.getUnlocalizedName().substring(5));
 
                   GameRegistry.addRecipe(new ItemStack(pickaxeterra), new Object[] {"ttt",
                                          " d ",
-                                         " d ", 't', titandia, 'd', bluradienstick
+                                         " d ", 't', TitanpowerBlocks.titandia, 'd', TitanpowerItems.blurod
                                                                                    });
-                  System.out.println(titandia.getUnlocalizedName().substring(5));
+
                   System.out.println("Yo!");
                   GameRegistry.registerWorldGenerator(new BluradienGen(), 0);
         }

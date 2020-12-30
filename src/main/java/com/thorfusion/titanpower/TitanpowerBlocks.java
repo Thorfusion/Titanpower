@@ -18,7 +18,7 @@ public class TitanpowerBlocks
 		private static final String name = "titandia";
 		public Titandia() {
 			super(Material.iron);
-			GameRegistry.registerBlock(this, titandia.getUnlocalizedName().substring(5));
+			GameRegistry.registerBlock(this, name);
 			setBlockTextureName(Titanpower.MODID:name);
 			setCreativeTab(CreativeTabs.tabTitanpower);
 			setBlockName(name):
