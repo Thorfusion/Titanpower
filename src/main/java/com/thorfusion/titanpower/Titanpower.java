@@ -38,7 +38,6 @@ public class Titanpower {
         TitanpowerTools.init();
         TitanpowerItems.init();
         TitanpowerItems.register();
-        TitanpowerOreGen.register();
         TitanpowerRecipes.init();
         if(TitanpowerConfig.Titanpoweroregeneration) {
             TitanpowerOreGen.register();
