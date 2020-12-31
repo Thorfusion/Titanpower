@@ -2,7 +2,7 @@
 {
   "modid": "titanpower",
   "name": "Titanpower",
-  "description": "Mod For Terralization modpack. Main code by Stealthalgorithm and some code and mainly artwork by Maggi373",
+  "description": "Mod For Terralization modpack. Rewritten code and artwork by Maggi373, original code by StealthAlgorithm",
   "version": "1.5.1",
   "mcversion": "1.7.10",
   "url": "thorfusion.com",
