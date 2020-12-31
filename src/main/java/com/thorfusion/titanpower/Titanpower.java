@@ -39,8 +39,10 @@ public class Titanpower {
         TitanpowerItems.init();
         TitanpowerItems.register();
         TitanpowerOreGen.register();
-        TitanpowerOreGen.register();
         TitanpowerRecipes.init();
+        if(TitanpowerConfig.Titanpoweroregeneration) {
+            TitanpowerOreGen.register();
+        }
     }
 
     @Mod.EventHandler

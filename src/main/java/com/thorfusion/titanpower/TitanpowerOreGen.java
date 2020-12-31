@@ -5,6 +5,8 @@ import com.thorfusion.titanpower.gen.BluradienGen;
 
 public class TitanpowerOreGen {
 	public static void register() {
-		GameRegistry.registerWorldGenerator(new BluradienGen(), 0);
+		if(TitanpowerConfig.Blueradiengeneration) {
+			GameRegistry.registerWorldGenerator(new BluradienGen(), 0);
+		}
 	}
 }
