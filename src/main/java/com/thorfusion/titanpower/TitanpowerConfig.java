@@ -1,5 +1,3 @@
 package com.thorfusion.titanpower;
 
-public class TitanpowerConfig {
-
-}
+public class TitanpowerConfig { }

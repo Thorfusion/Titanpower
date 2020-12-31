@@ -5,19 +5,16 @@ import net.minecraft.item.ItemPickaxe;
 import net.minecraftforge.common.util.EnumHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-public class TitanpowerTools
-{
+public class TitanpowerTools {
       public static Item PickaxeTerralization;
 
-      public static void init()
-      {
+      public static void init() {
             PickaxeTerralization = new Terralization();
       }
 
-      public class Terralization  extends ItemPickaxe
-
-      {
+      public class Terralization extends ItemPickaxe {
             private static final String name = "Terralization";
+
             public Terralization() {
                   super(ToolMaterial.EMERALD);
                   GameRegistry.registerItem(this, name);

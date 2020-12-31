@@ -10,10 +10,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 
-public class TitanpowerOreGen
-{
-	public static void register()
-	{
+public class TitanpowerOreGen {
+	public static void register() {
 		GameRegistry.registerWorldGenerator(new BluradienGen(), 0);
 	}
 
