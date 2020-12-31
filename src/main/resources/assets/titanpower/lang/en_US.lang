@@ -1,7 +1,7 @@
-item.PickaxeTerra.name=Terralization
+item.Terralization.name=Terralization
 tile.titandia.name=Titandia
 tile.bluradien.name=Bluradien
-item.Blurod.name=Blurod
+item.blurod.name=Blurod
 msg.thorfusion.value=This command is just for display for now....
 
 itemGroup.tabTitanpower=Titanpower
