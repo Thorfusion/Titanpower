@@ -31,6 +31,7 @@ public class Titanpower {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        TitanpowerConfig.init();
         TitanpowerBlocks.init();
         TitanpowerOreBlocks.init();
         TitanpowerOreBlocks.register();
@@ -40,7 +41,6 @@ public class Titanpower {
         TitanpowerOreGen.register();
         TitanpowerOreGen.register();
         TitanpowerRecipes.init();
-        TitanpowerConfig.init();
     }
 
     @Mod.EventHandler
