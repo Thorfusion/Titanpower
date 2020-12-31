@@ -40,6 +40,7 @@ public class Titanpower {
         TitanpowerOreGen.register();
         TitanpowerOreGen.register();
         TitanpowerRecipes.init();
+        TitanpowerConfig.init();
     }
 
     @Mod.EventHandler
