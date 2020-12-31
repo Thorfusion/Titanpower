@@ -19,7 +19,7 @@ public class TitanpowerTools
       {
             private static final String name = "Terralization";
             public Terralization() {
-                  super(Item.ToolMaterial);
+                  super(ToolMaterial.EMERALD);
                   GameRegistry.registerItem(this, name);
                   setCreativeTab(Titanpower.tabTitanpower);
                   setTextureName(Titanpower.MODID + ":" + name);

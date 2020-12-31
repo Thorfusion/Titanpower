@@ -14,9 +14,12 @@ public class TitanpowerBlocks
 		titandia = new Titandia();
 	}
 
-	public class Titandia  extends Block {
+	public class Titandia  extends Block
+	{
 		private static final String name = "titandia";
-		public Titandia() {
+
+		public Titandia()
+		{
 			super(Material.iron);
 			GameRegistry.registerBlock(this, name);
 			setBlockTextureName(Titanpower.MODID + ":" + name);

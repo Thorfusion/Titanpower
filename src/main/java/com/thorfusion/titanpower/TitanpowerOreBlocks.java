@@ -10,9 +10,10 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class TitanpowerOreBlocks
 {
 	public static Block bluradien;
+
 	public static void init()
 	{
-		bluradien = new TitanpowerOreBlocks.Bluradien();
+		bluradien = new Bluradien();
 	}
 
 	public static void register()
@@ -20,10 +21,12 @@ public class TitanpowerOreBlocks
 
 	}
 
-	public class Bluradien	extends Block {
+	public class Bluradien	extends Block
+	{
 		private static final String name = "bluradien";
 
-		public Bluradien() {
+		public Bluradien()
+		{
 			super(Material.rock);
 			GameRegistry.registerBlock(this, name);
 			setBlockName(name);
@@ -36,9 +39,8 @@ public class TitanpowerOreBlocks
 		}
 	}
 
-	@Override
-	public Item getItemDropped(int metadata,Random rand, int fortune) {
-		
+	public Item getItemDropped(int metadata,Random rand, int fortune)
+	{
 		return TitanpowerItems.blurod;
 	}
 }
