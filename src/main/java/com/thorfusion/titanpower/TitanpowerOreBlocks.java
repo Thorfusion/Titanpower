@@ -2,6 +2,7 @@ package com.thorfusion.titanpower;
 
 import java.util.Random;
 
+import com.thorfusion.titanpower.ore.Bluradien;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -17,27 +18,8 @@ public class TitanpowerOreBlocks {
 	public static void register() {
 
 	}
-
-	public class Bluradien extends Block {
-		private static final String name = "bluradien";
-
-		public Bluradien() {
-			super(Material.rock);
-			GameRegistry.registerBlock(this, name);
-			setBlockName(name);
-			setBlockTextureName(Titanpower.MODID + ":" + name);
-			setStepSound(Block.soundTypeGlass);
-			setLightLevel(0.1F);
-			setResistance(100F);
-			setHarvestLevel("pickaxe", 3);
-			setCreativeTab(Titanpower.tabTitanpower);
-		}
-	}
-
-	public Item getItemDropped(int metadata, Random rand, int fortune) {
-		return TitanpowerItems.blurod;
-	}
 }
+
 
 
 
