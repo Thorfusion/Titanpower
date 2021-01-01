@@ -23,6 +23,7 @@ public class Bluradien extends Block {
         setStepSound(Block.soundTypeGlass);
         setLightLevel(0.1F);
         setResistance(100F);
+        setHardness(6F);
         setHarvestLevel("pickaxe", 3);
         setCreativeTab(Titanpower.tabTitanpower);
     }
