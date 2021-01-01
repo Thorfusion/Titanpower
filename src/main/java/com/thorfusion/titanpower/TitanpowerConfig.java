@@ -20,7 +20,7 @@ public class TitanpowerConfig {
         Titanpoweroregeneration = config.get("Generation", "Oregeneration", true).getBoolean();
         Blueradiengeneration = config.get("Generation", "BluradienGeneration", true).getBoolean();
         //Tools
-        TerralizationDamage = (float) config.get("Tools", "TerralizationDamage", 130.0).getDouble();
+        TerralizationDamage = (float) config.get("Tools", "TerralizationDamage", 180.0).getDouble();
         //after you're done:
         config.save();//saves the Configuration content into the file.
     }
