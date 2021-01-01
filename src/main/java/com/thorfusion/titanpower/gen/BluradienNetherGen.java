@@ -11,19 +11,19 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 
 import java.util.Random;
 
-public class BluradienGen implements IWorldGenerator {
+public class BluradienNetherGen implements IWorldGenerator {
 
     @Override
     public void generate(Random random, int chunkx, int chunkz, World world, IChunkProvider chunkGenerator, IChunkProvider hunckProvider) {
         switch (world.provider.dimensionId) {
-            case 0:
-                generateOverworld(world, random, chunkx, chunkz);
+            case -1:
+                generateNether(world, random, chunkx, chunkz);
                 break;
         }
     }
 
-    public void generateOverworld(World world, Random rand, int x, int z) {
-        generateOre(TitanpowerOreBlocks.bluradien, world, rand, x, z, TitanpowerConfig.Blueradiengenerationminveinsize, TitanpowerConfig.Blueradiengenerationmaxveinsize, TitanpowerConfig.Blueradiengenerationchanceveinsize, TitanpowerConfig.Blueradiengenerationminy, TitanpowerConfig.Blueradiengenerationmaxy, Blocks.stone);
+    public void generateNether(World world, Random rand, int x, int z) {
+        generateOre(TitanpowerOreBlocks.bluradiennether, world, rand, x, z, TitanpowerConfig.Blueradiengenerationnetherminveinsize, TitanpowerConfig.Blueradiengenerationnethermaxveinsize, TitanpowerConfig.Blueradiengenerationnetherchanceveinsize, TitanpowerConfig.Blueradiengenerationnetherminy, TitanpowerConfig.Blueradiengenerationnethermaxy, Blocks.netherrack);
     }
 
     public void generateOre(Block block, World world, Random random, int chunkx, int chunkz, int minviensize, int maxviensize, int chance, int minY, int maxY, Block generatin) {

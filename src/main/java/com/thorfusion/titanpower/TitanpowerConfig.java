@@ -8,7 +8,24 @@ import java.io.File;
 public class TitanpowerConfig {
     public static boolean Titanpoweroregeneration;
     public static boolean Blueradiengeneration;
+    public static boolean Blueradiengenerationnether;
+    public static boolean Blueradiengenerationend;
     public static float TerralizationDamage;
+    public static int Blueradiengenerationminveinsize;
+    public static int Blueradiengenerationmaxveinsize;
+    public static int Blueradiengenerationchanceveinsize;
+    public static int Blueradiengenerationminy;
+    public static int Blueradiengenerationmaxy;
+    public static int Blueradiengenerationnetherminveinsize;
+    public static int Blueradiengenerationnethermaxveinsize;
+    public static int Blueradiengenerationnetherchanceveinsize;
+    public static int Blueradiengenerationnetherminy;
+    public static int Blueradiengenerationnethermaxy;
+    public static int Blueradiengenerationendminveinsize;
+    public static int Blueradiengenerationendmaxveinsize;
+    public static int Blueradiengenerationendchanceveinsize;
+    public static int Blueradiengenerationendminy;
+    public static int Blueradiengenerationendmaxy;
 
     public static void init() {
         //this line either creates the file if it doesn't exist or opens it if it already exists.
@@ -18,7 +35,28 @@ public class TitanpowerConfig {
         //use the config.get* methods to add/get values from the config as I explained above.
         //OreGeneration
         Titanpoweroregeneration = config.get("Generation", "Oregeneration", true).getBoolean();
-        Blueradiengeneration = config.get("Generation", "BluradienGeneration", true).getBoolean();
+        //Generation in world
+        Blueradiengeneration = config.get("Generation_World", "BluradienOre", true).getBoolean();
+        Blueradiengenerationminveinsize = config.get("Generation_World", "Bluradien_minveinsize", 1).getInt();
+        Blueradiengenerationmaxveinsize = config.get("Generation_World", "Bluradien_maxveinsize", 3).getInt();
+        Blueradiengenerationchanceveinsize = config.get("Generation_World", "Bluradien_chance", 1).getInt();
+        Blueradiengenerationminy = config.get("Generation_World", "Bluradien_miny", 0).getInt();
+        Blueradiengenerationmaxy = config.get("Generation_World", "Bluradien_maxy", 40).getInt();
+        //Generation in nether
+        Blueradiengenerationnether = config.get("Generation_Nether", "BluradienGeneration", true).getBoolean();
+        Blueradiengenerationnetherminveinsize = config.get("Generation_Nether", "Bluradien_minveinsize", 2).getInt();
+        Blueradiengenerationnethermaxveinsize = config.get("Generation_Nether", "Bluradien_maxveinsize", 10).getInt();
+        Blueradiengenerationnetherchanceveinsize = config.get("Generation_Nether", "Bluradien_chance", 1).getInt();
+        Blueradiengenerationnetherminy = config.get("Generation_Nether", "Bluradien_miny", 105).getInt();
+        Blueradiengenerationnethermaxy = config.get("Generation_Nether", "Bluradien_maxy", 120).getInt();
+        //Generation in end
+        Blueradiengenerationend = config.get("Generation_End", "BluradienGeneration", true).getBoolean();
+        Blueradiengenerationendminveinsize = config.get("Generation_End", "Bluradien_minveinsize", 3).getInt();
+        Blueradiengenerationendmaxveinsize = config.get("Generation_End", "Bluradien_maxveinsize", 10).getInt();
+        Blueradiengenerationendchanceveinsize = config.get("Generation_End", "Bluradien_chance", 40).getInt();
+        Blueradiengenerationendminy = config.get("Generation_End", "Bluradien_miny", 0).getInt();
+        Blueradiengenerationendmaxy = config.get("Generation_End", "Bluradien_maxy", 200).getInt();
+
         //Tools
         TerralizationDamage = (float) config.get("Tools", "TerralizationDamage", 180.0).getDouble();
         //after you're done:

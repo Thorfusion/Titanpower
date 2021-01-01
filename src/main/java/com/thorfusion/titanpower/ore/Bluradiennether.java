@@ -9,20 +9,20 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class Bluradien extends Block {
+public class Bluradiennether extends Block {
     public Item getItemDropped(int metadata, Random rand, int fortune) {
         return TitanpowerItems.blurod;
     }
-    private static final String name = "bluradien";
+    private static final String name = "bluradiennether";
 
-    public Bluradien() {
+    public Bluradiennether() {
         super(Material.rock);
         GameRegistry.registerBlock(this, name);
         setBlockName(name);
         setBlockTextureName(Titanpower.MODID + ":" + name);
         setStepSound(Block.soundTypeGlass);
-        setResistance(1000F);
-        setHardness(4F);
+        setResistance(100F);
+        setHardness(2.5F);
         setHarvestLevel("pickaxe", 3);
         setCreativeTab(Titanpower.tabTitanpower);
     }
