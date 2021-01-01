@@ -10,7 +10,12 @@ public class TitanpowerConfig {
     public static boolean Blueradiengeneration;
     public static boolean Blueradiengenerationnether;
     public static boolean Blueradiengenerationend;
+    public static boolean EnableTerralization;
+    public static boolean EnableBluAxe;
+    public static boolean EnableBluShovel;
     public static float TerralizationDamage;
+    public static float BluAxeDamage;
+    public static float BluShovelDamage;
     public static int Blueradiengenerationminveinsize;
     public static int Blueradiengenerationmaxveinsize;
     public static int Blueradiengenerationchanceveinsize;
@@ -58,7 +63,12 @@ public class TitanpowerConfig {
         Blueradiengenerationendmaxy = config.get("Generation_End", "Bluradien_maxy", 200).getInt();
 
         //Tools
-        TerralizationDamage = (float) config.get("Tools", "TerralizationDamage", 180.0).getDouble();
+        TerralizationDamage = (float) config.get("Tools", "TerralizationDamage", 80.0).getDouble();
+        BluAxeDamage = (float) config.get("Tools", "BluAxeDamage", 180.0).getDouble();
+        BluShovelDamage = (float) config.get("Tools", "BluShovelDamage", 40.0).getDouble();
+        EnableTerralization = config.get("Tools", "Terralization", true).getBoolean();
+        EnableBluAxe = config.get("Tools", "BluAxe", true).getBoolean();
+        EnableBluShovel = config.get("Tools", "BluShovel", true).getBoolean();
         //after you're done:
         config.save();//saves the Configuration content into the file.
     }
