@@ -22,7 +22,7 @@ public class Titanpower {
     public static CreativeTabs tabTitanpower = new CreativeTabs("tabTitanpower") {
         @Override
         public Item getTabIconItem() {
-            return new ItemStack(TitanpowerItems.blurod).getItem();
+            return new ItemStack(TitanpowerItems.TerralizationCreative).getItem();
         }
     };
 
