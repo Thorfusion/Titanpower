@@ -18,29 +18,31 @@ public class BluradienGen implements IWorldGenerator {
             case 1:
                 generateEnd(world, random, chunkx, chunkz);
                 break;
+                /*
             case 0:
                 generateOverworld(world, random, chunkx, chunkz);
                 break;
             case -1:
                 generateNether(world, random, chunkx, chunkz);
                 break;
+                */
 
         }
 
     }
-
-    public void generateNether(World world, Random rand, int x, int z) {
-        generateOre(TitanpowerOreBlocks.bluradien, world, rand, x, z, 2, 10, 5, 0, 100, Blocks.end_stone);
+    public void generateEnd(World world, Random rand, int x, int z) {
+        generateOre(TitanpowerOreBlocks.bluradien, world, rand, x, z, 2, 10, 20, 0, 200, Blocks.end_stone);
     }
 
+    /* Disabled oregen in nether and OVERWORLD
     public void generateOverworld(World world, Random rand, int x, int z) {
         generateOre(TitanpowerOreBlocks.bluradien, world, rand, x, z, 2, 10, 5, 0, 100, Blocks.stone);
     }
-
-    public void generateEnd(World world, Random rand, int x, int z) {
+    public void generateNether(World world, Random rand, int x, int z) {
         generateOre(TitanpowerOreBlocks.bluradien, world, rand, x, z, 2, 10, 5, 0, 100, Blocks.netherrack);
     }
 
+    */
     public void generateOre(Block block, World world, Random random, int chunkx, int chunkz, int minviensize, int maxviensize, int chance, int minY, int maxY, Block generatin) {
         int viensize = minviensize + random.nextInt(maxviensize - minviensize);
         int heightrange = maxY - minY;
