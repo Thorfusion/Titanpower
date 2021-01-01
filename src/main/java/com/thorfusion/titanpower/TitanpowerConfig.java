@@ -42,15 +42,15 @@ public class TitanpowerConfig {
         Titanpoweroregeneration = config.get("Generation", "Oregeneration", true).getBoolean();
         //Generation in world
         Blueradiengeneration = config.get("Generation_World", "BluradienOre", true).getBoolean();
-        Blueradiengenerationminveinsize = config.get("Generation_World", "Bluradien_minveinsize", 1).getInt();
+        Blueradiengenerationminveinsize = config.get("Generation_World", "Bluradien_minveinsize", 2).getInt();
         Blueradiengenerationmaxveinsize = config.get("Generation_World", "Bluradien_maxveinsize", 3).getInt();
         Blueradiengenerationchanceveinsize = config.get("Generation_World", "Bluradien_chance", 1).getInt();
-        Blueradiengenerationminy = config.get("Generation_World", "Bluradien_miny", 0).getInt();
+        Blueradiengenerationminy = config.get("Generation_World", "Bluradien_miny", 10).getInt();
         Blueradiengenerationmaxy = config.get("Generation_World", "Bluradien_maxy", 40).getInt();
         //Generation in nether
         Blueradiengenerationnether = config.get("Generation_Nether", "BluradienGeneration", true).getBoolean();
         Blueradiengenerationnetherminveinsize = config.get("Generation_Nether", "Bluradien_minveinsize", 2).getInt();
-        Blueradiengenerationnethermaxveinsize = config.get("Generation_Nether", "Bluradien_maxveinsize", 10).getInt();
+        Blueradiengenerationnethermaxveinsize = config.get("Generation_Nether", "Bluradien_maxveinsize", 5).getInt();
         Blueradiengenerationnetherchanceveinsize = config.get("Generation_Nether", "Bluradien_chance", 1).getInt();
         Blueradiengenerationnetherminy = config.get("Generation_Nether", "Bluradien_miny", 105).getInt();
         Blueradiengenerationnethermaxy = config.get("Generation_Nether", "Bluradien_maxy", 120).getInt();
