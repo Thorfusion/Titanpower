@@ -16,7 +16,7 @@ public class Titandia extends Block {
         setBlockName(name);
         setLightLevel(1F);
         setStepSound(soundTypeSand);
-        setResistance(4000F);
+        setResistance(40000F);
         setHardness(0.1F);
         setHarvestLevel("shovel", 3);
     }
