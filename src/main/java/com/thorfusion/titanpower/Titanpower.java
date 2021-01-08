@@ -15,7 +15,7 @@ import com.jadarstudios.developercapes.DevCapes;
 
 public class Titanpower {
     public static final String NAME = "Titanpower";
-    public static final String MODID = "titanpower";
+    public static final String MODID = "thorfusion";
     public static final String VERSION = "1.5.1";
 
     //Adds creative tab
@@ -46,9 +46,11 @@ public class Titanpower {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        //proxy, tilentity
-        if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) {
-            DevCapes.getInstance().registerConfig("https://technic-solder.eu-central-1.linodeobjects.com/cape.json");
+        if(TitanpowerConfig.EnableCapes) {
+            //proxy, tilentity
+            if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) {
+                DevCapes.getInstance().registerConfig("https://technic-solder.eu-central-1.linodeobjects.com/cape.json");
+            }
         }
     }
 

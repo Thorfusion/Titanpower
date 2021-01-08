@@ -13,6 +13,7 @@ public class TitanpowerConfig {
     public static boolean EnableTerralization;
     public static boolean EnableBluAxe;
     public static boolean EnableBluShovel;
+    public static boolean EnableCapes;
     public static float TerralizationDamage;
     public static float BluAxeDamage;
     public static float BluShovelDamage;
@@ -69,6 +70,9 @@ public class TitanpowerConfig {
         EnableTerralization = config.get("Tools", "Terralization", true).getBoolean();
         EnableBluAxe = config.get("Tools", "BluAxe", true).getBoolean();
         EnableBluShovel = config.get("Tools", "BluShovel", true).getBoolean();
+
+        //General
+        EnableCapes = config.get("General", "Capes", true).getBoolean();
         //after you're done:
         config.save();//saves the Configuration content into the file.
     }
