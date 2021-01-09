@@ -1,11 +1,11 @@
-package com.thorfusion.titanpower;
+package com.thorfusion.thorfusion;
 
 
 import net.minecraftforge.common.config.Configuration;
 
 import java.io.File;
 
-public class TitanpowerConfig {
+public class ThorfusionConfig {
     public static boolean Titanpoweroregeneration;
     public static boolean Blueradiengeneration;
     public static boolean Blueradiengenerationnether;
@@ -44,7 +44,7 @@ public class TitanpowerConfig {
         //Generation in world
         Blueradiengeneration = config.get("Generation_World", "BluradienOre", true).getBoolean();
         Blueradiengenerationminveinsize = config.get("Generation_World", "Bluradien_minveinsize", 2).getInt();
-        Blueradiengenerationmaxveinsize = config.get("Generation_World", "Bluradien_maxveinsize", 3).getInt();
+        Blueradiengenerationmaxveinsize = config.get("Generation_World", "Bluradien_maxveinsize", 5).getInt();
         Blueradiengenerationchanceveinsize = config.get("Generation_World", "Bluradien_chance", 1).getInt();
         Blueradiengenerationminy = config.get("Generation_World", "Bluradien_miny", 10).getInt();
         Blueradiengenerationmaxy = config.get("Generation_World", "Bluradien_maxy", 40).getInt();
@@ -52,7 +52,7 @@ public class TitanpowerConfig {
         Blueradiengenerationnether = config.get("Generation_Nether", "BluradienGeneration", true).getBoolean();
         Blueradiengenerationnetherminveinsize = config.get("Generation_Nether", "Bluradien_minveinsize", 2).getInt();
         Blueradiengenerationnethermaxveinsize = config.get("Generation_Nether", "Bluradien_maxveinsize", 5).getInt();
-        Blueradiengenerationnetherchanceveinsize = config.get("Generation_Nether", "Bluradien_chance", 1).getInt();
+        Blueradiengenerationnetherchanceveinsize = config.get("Generation_Nether", "Bluradien_chance", 2).getInt();
         Blueradiengenerationnetherminy = config.get("Generation_Nether", "Bluradien_miny", 105).getInt();
         Blueradiengenerationnethermaxy = config.get("Generation_Nether", "Bluradien_maxy", 120).getInt();
         //Generation in end

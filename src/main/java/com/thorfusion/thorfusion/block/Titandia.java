@@ -1,6 +1,6 @@
-package com.thorfusion.titanpower.block;
+package com.thorfusion.thorfusion.block;
 
-import com.thorfusion.titanpower.Titanpower;
+import com.thorfusion.thorfusion.Thorfusion;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -11,8 +11,8 @@ public class Titandia extends Block {
     public Titandia() {
         super(Material.iron);
         GameRegistry.registerBlock(this, name);
-        setBlockTextureName(Titanpower.MODID + ":" + name);
-        setCreativeTab(Titanpower.tabTitanpower);
+        setBlockTextureName(Thorfusion.MODID + ":" + name);
+        setCreativeTab(Thorfusion.tabTitanpower);
         setBlockName(name);
         setLightLevel(1F);
         setStepSound(soundTypeSand);

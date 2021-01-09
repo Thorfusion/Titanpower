@@ -1,10 +1,10 @@
-package com.thorfusion.titanpower;
+package com.thorfusion.thorfusion;
 
-import com.thorfusion.titanpower.block.Titandia;
+import com.thorfusion.thorfusion.block.Titandia;
 import net.minecraft.block.Block;
 
 
-public class TitanpowerBlocks {
+public class ThorfusionBlocks {
 	public static Block titandia;
 
 	public static void init() {

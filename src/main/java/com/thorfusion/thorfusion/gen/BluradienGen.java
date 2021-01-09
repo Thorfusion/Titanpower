@@ -1,7 +1,7 @@
-package com.thorfusion.titanpower.gen;
+package com.thorfusion.thorfusion.gen;
 
-import com.thorfusion.titanpower.TitanpowerConfig;
-import com.thorfusion.titanpower.TitanpowerOreBlocks;
+import com.thorfusion.thorfusion.ThorfusionConfig;
+import com.thorfusion.thorfusion.ThorfusionOreBlocks;
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -23,7 +23,7 @@ public class BluradienGen implements IWorldGenerator {
     }
 
     public void generateOverworld(World world, Random rand, int x, int z) {
-        generateOre(TitanpowerOreBlocks.bluradien, world, rand, x, z, TitanpowerConfig.Blueradiengenerationminveinsize, TitanpowerConfig.Blueradiengenerationmaxveinsize, TitanpowerConfig.Blueradiengenerationchanceveinsize, TitanpowerConfig.Blueradiengenerationminy, TitanpowerConfig.Blueradiengenerationmaxy, Blocks.stone);
+        generateOre(ThorfusionOreBlocks.bluradien, world, rand, x, z, ThorfusionConfig.Blueradiengenerationminveinsize, ThorfusionConfig.Blueradiengenerationmaxveinsize, ThorfusionConfig.Blueradiengenerationchanceveinsize, ThorfusionConfig.Blueradiengenerationminy, ThorfusionConfig.Blueradiengenerationmaxy, Blocks.stone);
     }
 
     public void generateOre(Block block, World world, Random random, int chunkx, int chunkz, int minviensize, int maxviensize, int chance, int minY, int maxY, Block generatin) {

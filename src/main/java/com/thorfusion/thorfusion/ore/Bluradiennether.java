@@ -1,7 +1,7 @@
-package com.thorfusion.titanpower.ore;
+package com.thorfusion.thorfusion.ore;
 
-import com.thorfusion.titanpower.Titanpower;
-import com.thorfusion.titanpower.TitanpowerItems;
+import com.thorfusion.thorfusion.Thorfusion;
+import com.thorfusion.thorfusion.ThorfusionItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class Bluradiennether extends Block {
     public Item getItemDropped(int metadata, Random rand, int fortune) {
-        return TitanpowerItems.blurod;
+        return ThorfusionItems.blurod;
     }
     private static final String name = "bluradiennether";
 
@@ -19,11 +19,11 @@ public class Bluradiennether extends Block {
         super(Material.rock);
         GameRegistry.registerBlock(this, name);
         setBlockName(name);
-        setBlockTextureName(Titanpower.MODID + ":" + name);
+        setBlockTextureName(Thorfusion.MODID + ":" + name);
         setStepSound(Block.soundTypeGlass);
         setResistance(100F);
         setHardness(2.5F);
         setHarvestLevel("pickaxe", 3);
-        setCreativeTab(Titanpower.tabTitanpower);
+        setCreativeTab(Thorfusion.tabTitanpower);
     }
 }

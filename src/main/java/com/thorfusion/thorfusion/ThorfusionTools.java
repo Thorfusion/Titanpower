@@ -1,23 +1,23 @@
-package com.thorfusion.titanpower;
+package com.thorfusion.thorfusion;
 
-import com.thorfusion.titanpower.tool.Terralization;
-import com.thorfusion.titanpower.tool.bluaxe;
-import com.thorfusion.titanpower.tool.blushovel;
+import com.thorfusion.thorfusion.tool.Terralization;
+import com.thorfusion.thorfusion.tool.bluaxe;
+import com.thorfusion.thorfusion.tool.blushovel;
 import net.minecraft.item.Item;
 
-public class TitanpowerTools {
+public class ThorfusionTools {
       public static Item PickaxeTerralization;
       public static Item BluAxe;
       public static Item BluShovel;
 
       public static void init() {
-            if(TitanpowerConfig.EnableTerralization){
+            if(ThorfusionConfig.EnableTerralization){
                   PickaxeTerralization = new Terralization();
             }
-            if(TitanpowerConfig.EnableBluAxe){
+            if(ThorfusionConfig.EnableBluAxe){
                   BluAxe = new bluaxe();
             }
-            if(TitanpowerConfig.EnableBluShovel){
+            if(ThorfusionConfig.EnableBluShovel){
                   BluShovel = new blushovel();
             }
       }
