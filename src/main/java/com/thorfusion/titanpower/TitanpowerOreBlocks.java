@@ -1,14 +1,10 @@
 package com.thorfusion.titanpower;
 
-import java.util.Random;
 
 import com.thorfusion.titanpower.ore.Bluradien;
 import com.thorfusion.titanpower.ore.Bluradiennether;
 import com.thorfusion.titanpower.ore.Bluradienend;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.item.Item;
-import cpw.mods.fml.common.registry.GameRegistry;
 
 public class TitanpowerOreBlocks {
 	public static Block bluradien;

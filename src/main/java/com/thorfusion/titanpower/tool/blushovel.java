@@ -3,7 +3,6 @@ package com.thorfusion.titanpower.tool;
 import com.thorfusion.titanpower.Titanpower;
 import com.thorfusion.titanpower.TitanpowerConfig;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
 import net.minecraftforge.common.util.EnumHelper;
 
