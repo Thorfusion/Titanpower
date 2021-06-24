@@ -34,15 +34,15 @@ public class TitanpowerConfig {
     public static int Blueradiengenerationendmaxy;
 
     public static void init() {
-        //this line either creates the file if it doesn't exist or opens it if it already exists.
         try {
-        Configuration config = new Configuration(new File("config/Titanpower.cfg"));
+            //this line either creates the file if it doesn't exist or opens it if it already exists.
+            Configuration config = new Configuration(new File("config/Titanpower.cfg"));
         }
         catch (Exception e) {
-            System.out.println("Could't create the config file");
+            System.out.println("Could't create / open the config file");
         }
-        try
-        config.load();//reads the contents of the file into the Configuration object.
+        try {
+            config.load();//reads the contents of the file into the Configuration object.
         }
         catch (Exception e) {
             System.out.println("Can't load the config file");
