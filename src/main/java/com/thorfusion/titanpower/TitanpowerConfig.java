@@ -35,8 +35,19 @@ public class TitanpowerConfig {
 
     public static void init() {
         //this line either creates the file if it doesn't exist or opens it if it already exists.
+        try {
         Configuration config = new Configuration(new File("config/Titanpower.cfg"));
+        }
+        catch (Exception e) {
+            System.out.println("Could't create the config file");
+        }
+        try
         config.load();//reads the contents of the file into the Configuration object.
+        }
+        catch (Exception e) {
+            System.out.println("Can't load the config file");
+            //The mod will still crash if the config file won't load, this is just to make it easier to spot the issue
+        }
 
         //use the config.get* methods to add/get values from the config as I explained above.
         //OreGeneration
@@ -73,7 +84,11 @@ public class TitanpowerConfig {
 
         //General
         EnableCapes = config.get("General", "Capes", true).getBoolean();
-        //after you're done:
+        try {
         config.save();//saves the Configuration content into the file.
+        }
+        catch (Exception e) {
+            System.out.println("Could't save changes to the config file");
+        }
     }
 }
