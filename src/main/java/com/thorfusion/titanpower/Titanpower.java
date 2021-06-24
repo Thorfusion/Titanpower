@@ -40,7 +40,13 @@ public class Titanpower {
         TitanpowerItems.register();
         TitanpowerRecipes.init();
         if(TitanpowerConfig.Titanpoweroregeneration) {
-            TitanpowerOreGen.register();
+            try {
+                TitanpowerOreGen.register();
+            }
+            catch (Exception e)
+            {
+                System.out.println("World Generation Error");
+            }
         }
     }
 
