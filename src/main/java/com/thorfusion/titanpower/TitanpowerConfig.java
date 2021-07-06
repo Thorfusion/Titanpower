@@ -13,10 +13,16 @@ public class TitanpowerConfig {
     public static boolean EnableTerralization;
     public static boolean EnableBluAxe;
     public static boolean EnableBluShovel;
+    public static boolean EnableBluArmor;
     public static boolean EnableCapes;
     public static float TerralizationDamage;
     public static float BluAxeDamage;
     public static float BluShovelDamage;
+    public static int BluArmourDurability;
+    public static int BluHatArmour;
+    public static int BluChestArmour;
+    public static int BluLeggingsArmour;
+    public static int BluBootsArmour;
     public static int Blueradiengenerationminveinsize;
     public static int Blueradiengenerationmaxveinsize;
     public static int Blueradiengenerationchanceveinsize;
@@ -72,6 +78,13 @@ public class TitanpowerConfig {
         EnableBluAxe = config.get("Tools", "BluAxe", true).getBoolean();
         EnableBluShovel = config.get("Tools", "BluShovel", true).getBoolean();
 
+        //Armour
+        EnableBluArmor = config.get("Armour", "Enable_BluArmour", true).getBoolean();
+        BluArmourDurability = config.get("Armour", "BluArmour_Durability", 5000).getInt();
+        BluHatArmour = config.get("Armour", "BluHat_Armour", 20).getInt();
+        BluChestArmour = config.get("Armour", "BluChestplate_Armour", 70).getInt();
+        BluLeggingsArmour = config.get("Armour", "BluLeggings_Armour", 50).getInt();
+        BluBootsArmour = config.get("Armour", "BluBoots_Armour", 30).getInt();
         //General
         EnableCapes = config.get("General", "Capes", true).getBoolean();
         try {

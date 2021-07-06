@@ -11,15 +11,9 @@ public class TitanpowerTools {
       public static Item BluShovel;
 
       public static void init() {
-            if(TitanpowerConfig.EnableTerralization){
-                  PickaxeTerralization = new Terralization();
-            }
-            if(TitanpowerConfig.EnableBluAxe){
-                  BluAxe = new bluaxe();
-            }
-            if(TitanpowerConfig.EnableBluShovel){
-                  BluShovel = new blushovel();
-            }
+            PickaxeTerralization = new Terralization();
+            BluAxe = new bluaxe();
+            BluShovel = new blushovel();
       }
 }
 
