@@ -18,6 +18,7 @@ public class Bluradien extends Block {
     public Bluradien() {
         super(Material.rock);
         GameRegistry.registerBlock(this, name);
+        OreDictionary.registerOre("oreBluradien", new ItemStack(this, 1, 0));
         setBlockName(name);
         setBlockTextureName(Titanpower.MODID + ":" + name);
         setStepSound(Block.soundTypeGlass);
