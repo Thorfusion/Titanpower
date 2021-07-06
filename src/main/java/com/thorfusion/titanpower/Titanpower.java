@@ -52,6 +52,8 @@ public class Titanpower {
         TitanpowerItems.init();
         TitanpowerItems.register();
         TitanpowerRecipes.init();
+        TitanpowerArmour.init();
+        TitanpowerArmour.register();
         if(!isMekanismLoaded) {
             TitanpowerVanillaRecipes.init();
         }
@@ -71,6 +73,7 @@ public class Titanpower {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        proxy_client.register_renderers();
         if(TitanpowerConfig.EnableCapes) {
             //proxy, tilentity
             if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) {
