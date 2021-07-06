@@ -2,10 +2,10 @@
 {
   "modid": "thorfusion",
   "name": "Titanpower",
-  "description": "Mod For Terralization modpack. The rewrite of the mod, new code and artwork by maggi373, original code by StealthAlgorithm",
+  "description": "Mod For Terralization modpack. The rewrite of the mod, new code, artwork and expansion by maggi373, original code by StealthAlgorithm",
   "version": "1.6.0",
   "mcversion": "1.7.10",
-  "url": "thorfusion.com",
+  "url": "https://thorfusion.com",
   "updateUrl": "",
   "authorList": ["StealthAlgorithm", "Maggi373"],
   "credits": "Stealthalgorithm, Maggi373",
