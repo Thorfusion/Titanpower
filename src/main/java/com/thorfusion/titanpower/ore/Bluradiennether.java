@@ -6,6 +6,8 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.Random;
 
@@ -18,6 +20,7 @@ public class Bluradiennether extends Block {
     public Bluradiennether() {
         super(Material.rock);
         GameRegistry.registerBlock(this, name);
+        OreDictionary.registerOre("oreBluradien", new ItemStack(this, 1, 0));
         setBlockName(name);
         setBlockTextureName(Titanpower.MODID + ":" + name);
         setStepSound(Block.soundTypeGlass);

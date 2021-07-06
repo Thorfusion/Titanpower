@@ -7,6 +7,9 @@ tile.bluradien.name=Bluradien Ore
 tile.bluradiennether.name=Bluradien Ore
 tile.bluradienend.name=Bluradien Ore
 item.blurod.name=Blurod
+item.bludust.name=Bludust
+item.bluplate.name=Bluinfused obsidian plate
+item.bluchest.name=Bluinfused obsidian chestplate
 msg.thorfusion.value=This command is just for display for now....
 
 itemGroup.tabTitanpower=Titanpower
