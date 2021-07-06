@@ -6,6 +6,7 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -56,7 +57,7 @@ public class Titanpower{
         }
         if(TitanpowerConfig.Titanpoweroregeneration) {
             try {
-                TitanpowerOreGen.register();
+                GameRegistry.registerWorldGenerator(new TitanpowerOreGen(), 0);
             }
             catch (Exception e)
             {
