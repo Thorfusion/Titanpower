@@ -17,7 +17,7 @@ public class TitanpowerArmour {
     private static final String bluleggingsname = "blu_leggings";
     private static final String blubootsname = "blu_boots";
 
-    public static final ItemArmor.ArmorMaterial bluArmorMaterial = EnumHelper.addArmorMaterial("bluArmorMaterial", 5000, new int[]{20,70,50,30}, 99);
+    public static final ItemArmor.ArmorMaterial bluArmorMaterial = EnumHelper.addArmorMaterial("bluArmorMaterial", TitanpowerConfig.BluArmourDurability, new int[]{TitanpowerConfig.BluHatArmour,TitanpowerConfig.BluChestArmour,TitanpowerConfig.BluLeggingsArmour,TitanpowerConfig.BluBootsArmour}, 99);
 
     public static void init() {
         Bluhat = new Bluarmor(bluArmorMaterial, 0, 0).setCreativeTab(Titanpower.tabTitanpower).setTextureName(Titanpower.MODID + ":" + bluhatname).setUnlocalizedName(bluhatname);
