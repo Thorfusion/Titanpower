@@ -11,5 +11,9 @@ item.bludust.name=Bludust
 item.bluplate.name=Bluinfused obsidian plate
 item.bluchest.name=Bluinfused obsidian chestplate
 msg.thorfusion.value=This command is just for display for now....
+item.tutorialmod:custom_helm.name=Custom Helmet
+item.tutorialmod:custom_chest.name=Custom Chestplate
+item.tutorialmod:custom_legs.name=Custom Legs
+item.tutorialmod:custom_boots.name=Custom Boots
 
 itemGroup.tabTitanpower=Titanpower
