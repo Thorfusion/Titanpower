@@ -5,10 +5,10 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class Titandia extends Block {
-    private static final String name = "titandia";
+public class Blutorch extends Block {
+    private static final String name = "blutorch";
 
-    public Titandia() {
+    public Blutorch() {
         super(Material.iron);
         GameRegistry.registerBlock(this, name);
         setBlockTextureName(Titanpower.MODID + ":" + name);

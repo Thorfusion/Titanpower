@@ -1,11 +1,8 @@
 package com.thorfusion.titanpower;
 
-import com.thorfusion.titanpower.proxy.ProxyClient;
-import com.thorfusion.titanpower.proxy.ProxyCommon;
-import com.thorfusion.titanpower.resources.References;
+
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -19,14 +16,10 @@ import com.jadarstudios.developercapes.DevCapes;
 
 @Mod(modid = Titanpower.MODID, name = Titanpower.NAME, version = Titanpower.VERSION)
 
-public class Titanpower {
+public class Titanpower{
     public static final String NAME = "Titanpower";
     public static final String MODID = "thorfusion";
     public static final String VERSION = "1.6.0";
-
-    @SidedProxy(clientSide= References.proxy_client, serverSide=References.proxy_common)
-    public static ProxyCommon proxy_common;
-    public static ProxyClient proxy_client;
 
     public static boolean isMekanismLoaded;
 
@@ -59,6 +52,7 @@ public class Titanpower {
         }
         if(isMekanismLoaded) {
             TitanpowerMekanismRecipes.init();
+            System.out.println("Lets bring this together mekanism");
         }
         if(TitanpowerConfig.Titanpoweroregeneration) {
             try {
@@ -73,7 +67,6 @@ public class Titanpower {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        proxy_client.register_renderers();
         if(TitanpowerConfig.EnableCapes) {
             //proxy, tilentity
             if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) {

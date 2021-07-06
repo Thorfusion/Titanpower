@@ -1,6 +1,6 @@
 package com.thorfusion.titanpower;
 
-import com.thorfusion.titanpower.armor.ArmorTM;
+import com.thorfusion.titanpower.armour.Bluarmor;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -12,20 +12,23 @@ public class TitanpowerArmour {
     public static Item Bluboots;
     public static Item Bluhat;
 
+    private static final String bluhatname = "blu_hat";
+    private static final String bluchestname = "blu_chest";
+    private static final String bluleggingsname = "blu_leggings";
+    private static final String blubootsname = "blu_boots";
+
+    public static final ItemArmor.ArmorMaterial bluArmorMaterial = EnumHelper.addArmorMaterial("bluArmorMaterial", 5000, new int[]{20,70,50,30}, 99);
+
     public static void init() {
-        ItemArmor.ArmorMaterial Useless = EnumHelper.addArmorMaterial("useless", 0, new int[]{0, 0, 0, 0}, 0);
-
-        Bluhat = new ArmorTM(Useless, 1, 0).setUnlocalizedName("Bluhat");
-        Bluchest = new ArmorTM(Useless, 1, 1).setUnlocalizedName("Bluchest");
-        Bluleggings = new ArmorTM(Useless, 1, 2).setUnlocalizedName("Bluleggings");
-        Bluboots = new ArmorTM(Useless, 1, 3).setUnlocalizedName("Bluboots");
-
-
+        Bluhat = new Bluarmor(bluArmorMaterial, 0, 0).setCreativeTab(Titanpower.tabTitanpower).setTextureName(Titanpower.MODID + ":" + bluhatname).setUnlocalizedName(bluhatname);
+        Bluchest = new Bluarmor(bluArmorMaterial, 0, 1).setCreativeTab(Titanpower.tabTitanpower).setTextureName(Titanpower.MODID + ":" + bluchestname).setUnlocalizedName(bluchestname);
+        Bluleggings = new Bluarmor(bluArmorMaterial, 0, 2).setCreativeTab(Titanpower.tabTitanpower).setTextureName(Titanpower.MODID + ":" + bluleggingsname).setUnlocalizedName(bluleggingsname);
+        Bluboots = new Bluarmor(bluArmorMaterial, 0, 3).setCreativeTab(Titanpower.tabTitanpower).setTextureName(Titanpower.MODID + ":" + blubootsname).setUnlocalizedName(blubootsname);
     }
         public static void register() {
-            GameRegistry.registerItem(Bluhat, "Bluhat");
-            GameRegistry.registerItem(Bluchest, "Bluchest");
-            GameRegistry.registerItem(Bluleggings, "Bluleggings");
-            GameRegistry.registerItem(Bluboots, "Bluboots");
+            GameRegistry.registerItem(Bluhat, bluhatname);
+            GameRegistry.registerItem(Bluchest, bluchestname);
+            GameRegistry.registerItem(Bluleggings, bluleggingsname);
+            GameRegistry.registerItem(Bluboots, blubootsname);
     }
 }
