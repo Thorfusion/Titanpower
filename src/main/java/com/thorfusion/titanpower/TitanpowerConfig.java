@@ -71,9 +71,9 @@ public class TitanpowerConfig {
         Blueradiengenerationendmaxy = config.get("Generation_End", "Bluradien_maxy", 200).getInt();
 
         //Tools
-        TerralizationDamage = (float) config.get("Tools", "TerralizationDamage", 130.0).getDouble();
-        BluAxeDamage = (float) config.get("Tools", "BluAxeDamage", 280.0).getDouble();
-        BluShovelDamage = (float) config.get("Tools", "BluShovelDamage", 68.0).getDouble();
+        TerralizationDamage = (float) config.get("Tools", "TerralizationDamage", 64.0).getDouble();
+        BluAxeDamage = (float) config.get("Tools", "BluAxeDamage", 128.0).getDouble();
+        BluShovelDamage = (float) config.get("Tools", "BluShovelDamage", 32.0).getDouble();
         EnableTerralization = config.get("Tools", "Terralization", true).getBoolean();
         EnableBluAxe = config.get("Tools", "BluAxe", true).getBoolean();
         EnableBluShovel = config.get("Tools", "BluShovel", true).getBoolean();
@@ -81,10 +81,10 @@ public class TitanpowerConfig {
         //Armour
         EnableBluArmor = config.get("Armour", "Enable_BluArmour", true).getBoolean();
         BluArmourDurability = config.get("Armour", "BluArmour_Durability", 5000).getInt();
-        BluHatArmour = config.get("Armour", "BluHat_Armour", 20).getInt();
-        BluChestArmour = config.get("Armour", "BluChestplate_Armour", 70).getInt();
-        BluLeggingsArmour = config.get("Armour", "BluLeggings_Armour", 50).getInt();
-        BluBootsArmour = config.get("Armour", "BluBoots_Armour", 30).getInt();
+        BluHatArmour = config.get("Armour", "BluHat_Armour", 10).getInt();
+        BluChestArmour = config.get("Armour", "BluChestplate_Armour", 35).getInt();
+        BluLeggingsArmour = config.get("Armour", "BluLeggings_Armour", 25).getInt();
+        BluBootsArmour = config.get("Armour", "BluBoots_Armour", 15).getInt();
         //General
         EnableCapes = config.get("General", "Capes", true).getBoolean();
         try {
