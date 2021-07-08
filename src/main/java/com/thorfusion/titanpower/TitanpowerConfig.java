@@ -80,7 +80,7 @@ public class TitanpowerConfig {
 
         //Armour
         EnableBluArmor = config.get("Armour", "Enable_BluArmour", true).getBoolean();
-        BluArmourDurability = config.get("Armour", "BluArmour_Durability", 5000).getInt();
+        BluArmourDurability = config.get("Armour", "BluArmour_Durability", 4096).getInt();
         BluHatArmour = config.get("Armour", "BluHat_Armour", 10).getInt();
         BluChestArmour = config.get("Armour", "BluChestplate_Armour", 35).getInt();
         BluLeggingsArmour = config.get("Armour", "BluLeggings_Armour", 25).getInt();
