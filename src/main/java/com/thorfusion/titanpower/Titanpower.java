@@ -20,7 +20,7 @@ import com.jadarstudios.developercapes.DevCapes;
 public class Titanpower{
     public static final String NAME = "Titanpower";
     public static final String MODID = "thorfusion";
-    public static final String VERSION = "1.6.0";
+    public static final String VERSION = "1.6.3";
 
     public static boolean isMekanismLoaded;
 
@@ -71,7 +71,7 @@ public class Titanpower{
         if(TitanpowerConfig.EnableCapes) {
             //proxy, tilentity
             if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) {
-                DevCapes.getInstance().registerConfig("https://technic-solder.eu-central-1.linodeobjects.com/cape.json");
+                DevCapes.getInstance().registerConfig("http://technic-solder.eu-central-1.linodeobjects.com/cape.json");
             }
         }
     }
