@@ -90,7 +90,7 @@ public class TitanpowerConfig {
         try {
             config.save();//saves the Configuration content into the file.
         } catch (Exception e) {
-            System.out.println("Could't save changes to the config file");
+            System.out.print("Could't save changes to the config file\n"+e);
         }
     }
 }

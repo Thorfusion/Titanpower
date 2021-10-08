@@ -61,7 +61,7 @@ public class Titanpower{
             }
             catch (Exception e)
             {
-                System.out.println("World Generation Error");
+                System.out.print("World Generation Error\n"+e);
             }
         }
     }
