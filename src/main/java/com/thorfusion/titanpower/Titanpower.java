@@ -71,7 +71,7 @@ public class Titanpower{
         if(TitanpowerConfig.EnableCapes) {
             //proxy, tilentity
             if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) {
-                DevCapes.getInstance().registerConfig("https://files.thorfusion.xyz/capes/scape.json");
+                DevCapes.getInstance().registerConfig("https://raw.githubusercontent.com/maggi373/files/main/capes/cape.json");
             }
         }
     }
