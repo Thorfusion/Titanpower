@@ -21,8 +21,6 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew buid
-    - name: Publish
       run: ./gradlew artifactoryPublish
       env:
           MAVEN_URL: ${{ secrets.MAVEN_URL }}
