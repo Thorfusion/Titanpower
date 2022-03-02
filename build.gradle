@@ -9,6 +9,7 @@ buildscript {
         classpath ('com.anatawa12.forge:ForgeGradle:1.2-1.0.+') {
             changing = true
         }
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.27.1"
     }
 }
 
@@ -17,6 +18,10 @@ plugins {
 }
 
 apply plugin: 'forge'
+apply plugin: 'idea'
+apply plugin: "com.jfrog.artifactory"
+apply plugin: "maven-publish"
+apply plugin: "maven"
 
 // Define properties file
 ext.configFile = file "build.properties"
@@ -36,7 +41,6 @@ targetCompatibility = '1.8'
 
 minecraft {
   version = config.minecraft_version + "-" + config.forge_version
-    runDir = "eclipse"
 }
 
 dependencies {
@@ -85,4 +89,39 @@ processResources
   from(sourceSets.main.resources.srcDirs) {
     exclude 'mcmod.info', 'Titanpower.java'
   }
+}
+
+artifactory {
+    contextUrl = System.getenv("MAVEN_URL")
+    publish {
+        repository {
+            repoKey = 'thorfusion'
+            username = System.getenv("MAVEN_USERNAME")
+            password = System.getenv("MAVEN_PASSWORD")
+            maven = true
+        }
+        defaults {
+            publications('mavenJava')
+        }
+        publishBuildInfo = false
+        publishArtifacts = true
+        publishPom = true
+    }
+    resolve {
+        repository {
+            repoKey = 'central'
+            username = System.getenv("MAVEN_USERNAME")
+            password = System.getenv("MAVEN_PASSWORD")
+            maven = true
+
+        }
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }
