@@ -36,7 +36,7 @@ configFile.withReader {
 
 version = "${config.minecraft_version}-${config.mod_version}"
 group= "com.thorfusion.titanpower" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "titanpower"
+archivesBaseName = "Titanpower"
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
