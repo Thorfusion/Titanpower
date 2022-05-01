@@ -125,6 +125,9 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             from components.java
+            components.java.withVariantsFromConfiguration(configurations.runtimeElements) {
+                skip()
+            }
         }
     }
 }
