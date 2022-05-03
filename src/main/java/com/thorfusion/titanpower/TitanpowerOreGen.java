@@ -13,7 +13,7 @@ import java.util.Random;
 public class TitanpowerOreGen implements IWorldGenerator {
 
 	@Override
-	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider hunckProvider) {
+	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
 		switch (world.provider.dimensionId) {
 			case 1:
 				generateEnd(world, random, chunkX, chunkZ);
@@ -26,6 +26,7 @@ public class TitanpowerOreGen implements IWorldGenerator {
 				break;
 		}
 	}
+
 	public void generateEnd(World world, Random rand, int x, int z) {
 		if(TitanpowerConfig.Blueradiengenerationend) {
 			generateOre(TitanpowerOreBlocks.bluradienend, world, rand, x, z, TitanpowerConfig.Blueradiengenerationendminveinsize, TitanpowerConfig.Blueradiengenerationendmaxveinsize, TitanpowerConfig.Blueradiengenerationendchanceveinsize, TitanpowerConfig.Blueradiengenerationendminy, TitanpowerConfig.Blueradiengenerationendmaxy, Blocks.end_stone);
@@ -43,7 +44,7 @@ public class TitanpowerOreGen implements IWorldGenerator {
 			generateOre(TitanpowerOreBlocks.bluradiennether, world, rand, x, z, TitanpowerConfig.Blueradiengenerationnetherminveinsize, TitanpowerConfig.Blueradiengenerationnethermaxveinsize, TitanpowerConfig.Blueradiengenerationnetherchanceveinsize, TitanpowerConfig.Blueradiengenerationnetherminy, TitanpowerConfig.Blueradiengenerationnethermaxy, Blocks.netherrack);
 		}
 	}
-
+	
 	public void generateOre(Block block, World world, Random random, int chunkX, int chunkZ, int minVienSize, int maxVienSize, int chance, int minY, int maxY, Block generatIn) {
 		int viensize = minVienSize + random.nextInt(maxVienSize - minVienSize);
 		int heightrange = maxY - minY;
