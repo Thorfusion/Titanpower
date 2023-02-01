@@ -24,6 +24,14 @@ apply plugin: "com.jfrog.artifactory"
 apply plugin: "maven-publish"
 apply plugin: "maven"
 
+repositories {
+    maven {
+        name 'central'
+        url 'https://maven.thorfusion.com/artifactory/central/'
+    }
+
+}
+
 // Define properties file
 ext.configFile = file "build.properties"
 
