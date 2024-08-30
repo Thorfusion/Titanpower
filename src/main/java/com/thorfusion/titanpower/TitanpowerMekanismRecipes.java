@@ -6,7 +6,6 @@ import mekanism.api.recipe.RecipeHelper;
 import net.minecraft.item.ItemStack;
 
 
-
 public class TitanpowerMekanismRecipes {
     public static void init() {
         RecipeHelper.addEnrichmentChamberRecipe(new ItemStack(TitanpowerItems.blurod), new ItemStack(TitanpowerItems.bludust, 1));
