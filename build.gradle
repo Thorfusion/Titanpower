@@ -1,15 +1,15 @@
 buildscript {
     repositories {
         maven {
-            name 'central'
-            url 'https://maven.thorfusion.com/artifactory/central/'
+            name = "central"
+            url = "https://maven.thorfusion.com/artifactory/central/"
         }
     }
     dependencies {
         classpath('com.anatawa12.forge:ForgeGradle:1.2-1.0.+') {
             changing = true
         }
-        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:latest.release"
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.33.1"
     }
 }
 
@@ -22,7 +22,6 @@ apply plugin: 'idea'
 apply plugin: 'java'
 apply plugin: "com.jfrog.artifactory"
 apply plugin: "maven-publish"
-apply plugin: "maven"
 
 repositories {
     maven {
@@ -67,12 +66,14 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-    compile(group: 'mekanism', name: 'Mekanism-Community-Edition', version: '1.7.10-9.10.+', classifier: 'API')
+    // compile(group: 'mekanism', name: 'Mekanism-Community-Edition', version: '1.7.10-9.10.+', classifier: 'API')
+    implementation "mekanism:Mekanism-Community-Edition:1.7.10-9.10.+:API"
 
 }
 
 processResources
         {
+            duplicatesStrategy = 'include'
             // this will ensure that this task is redone when the versions change.
             inputs.property "version", config.mod_version
             inputs.property "mcversion", config.minecraft_version
